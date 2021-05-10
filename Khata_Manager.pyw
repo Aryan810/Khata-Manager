@@ -12,8 +12,7 @@ from zipfile import ZipFile
 
 class Check:
 
-    def __init__(self, a=''):
-        self.void_func(a)
+    def __init__(self):
         self.data_loc = "files\\data\\data.xlsx"
         self.history_sample = DataFrame({"Date": [],
                                          "Amount": [],
@@ -1213,8 +1212,8 @@ class Run:
 
 
 if __name__ == '__main__':
-    # try:
-    Check("Checking!").check_all()
-    Run.run()
-    '''except Exception as e11:
-        Main.show_error(e11)'''
+    try:
+        Check("Checking!").check_all()
+        Run.run()
+    except Exception as e11:
+        Main.show_error(e11)
