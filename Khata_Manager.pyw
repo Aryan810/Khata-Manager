@@ -1213,7 +1213,7 @@ class Run:
 
 if __name__ == '__main__':
     try:
-        Check("Checking!").check_all()
+        Check().check_all()
         Run.run()
     except Exception as e11:
         Main.show_error(e11)
