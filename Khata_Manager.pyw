@@ -383,7 +383,7 @@ class Main(Tk):
                                               message="Are you sure to close Khata Manager?")
         if user_permission:
             self.destroy()
-            Check("Backup in progress!").backup_data()
+            Check().backup_data()
             quit(0)
         else:
             pass
